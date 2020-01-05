@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*--------GRID--------*/
+
+/*names for grid-elements*/
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: right; }
+.item4 { grid-area: main; }
+.item5 { grid-area: footer; }
+
+/*lay-out proprties for grid*/
+.grid-container {
+  grid-template-areas:
+    'header header header header header'
+    'menu right right right right'
+    'menu main main main main'
+    'footer footer footer footer footer';
+}
+
+/*properties for the whole grid-container*/
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 10px;
+    background-color: #C5C5C5;
+    padding: 40px 40px 10px 40px;
+}
+
+ /*proprties for div in container*/
+.grid-container > div {
+    background-color: whitesmoke;
+    text-align: center;
+  }
+
+
+/*properties for items*/
+
+/*--------item1 - header--------*/
+div > .item1 {
+    background-color: whitesmoke;
+    text-align: right;
+    height: 5rem;
+
+}
+
+#header_links > li {
+    display: inline-block;
+    padding: 22px 20px;
+    list-style: none;
+    color: #C5C5C5;
+    font-size: 180%;
+    font-family: tw -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*--------item2 - menu--------*/
+
+/*lines*/ 
+
+.horisontell_line {
+    border-bottom: 2px solid whitesmoke;
+    width: 60%;
+    margin-left: 17%;
+}
+
+#menu_contact_links,
+#education_list,
+#digital_skills_list,
+#personal_skills_list,
+#language_list {
+    list-style: none;
+    color: whitesmoke;
+    font-size: 18px;
+    padding: 7rem 0rem;
+    font-family: tw -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.item2 > ul {
+    padding: 7rem 0rem;
+}
+
+div > .item2 {
+    background-color: #A47963;
+    color: whitesmoke;
+    height: 110rem;
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+#menu_contact_links > li {
+    color: tomato;
+}
+
+
+/*--------item3 - right---------*/ 
+div > .item3 {
+    height: 42rem;
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+#profile_pic {
+    width: 275px;
+    height: 600px;
+    float: left;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 30px;
+}
+
+h3 {
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+
+#profile_text {
+    color: red;
+    text-align: left;
+    padding-top: 10px;
+}
+
+#profile_text_ambitioner,
+#profile_text_ommig {
+    color: blue;
+    padding-right: 30px;
+}
+
+#title_aboutme {
+    color: red; 
+    padding-left: 30px;
+}
+
+
+/*--------item4 - main --------*/
+div > .item4 {
+    height: 50rem;
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
