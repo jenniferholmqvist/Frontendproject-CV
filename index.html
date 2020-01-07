@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CV - Jennifer Holmqvist</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./public/dist/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 
     <script src="app.js" defer></script>
@@ -17,9 +17,9 @@
     <div class="grid-container">
         <div class="item1">
             <ul id="header_links">
-                <li><a>CV</a></li>
-                <li><a>Utbildningar</a></li>
-                <li><a>Referensarbeten</a></li>
+                <li><a class="head_link" href="index.html">CV</a></li>
+                <li id="header_sides"><a class="head_link" href="#education">Utbildningar</a></li>
+                <li><a class="head_link" href="indexeng.html">In English</a></li>
             </ul>
         </div>
         <div class="item2">
@@ -27,23 +27,23 @@
                 <i class="fab fa-linkedin" font-size="58px"></i><span> linkedin.com/in/jennifer-holmqvist</span><br>
                 <i class="far fa-envelope" font-size="58px"></i><span> j-holmqvist@hotmail.com</span><br>
                 <i class="fas fa-mobile-alt" font-size="58px"></i><span> 073-578 54 58</span><br>
-                <i class="fas fa-map-marker-alt" font-size="58px"></i><span> Drottningholmsvägen 48, 112 19 Stockholm</span>
+                <i class="fas fa-map-marker-alt" font-size="58px"></i><span> Drottningholmsvägen 48,<br>112 19 Stockholm</span>
             </ul>
 
             <div class="horisontell_line"></div>
 
-            <ul id="education_list"><p>Skolor</p>
-                <li>Medieinstitutet 2019-2021 <br>
+            <ul id="education_list"><p id="item2_heading">Skolor</p>
+                <li><span id="school_years">2019-2021</span> Medieinstitutet<br>
                 Webbutveckling inom e-handel</li>
-                <li>Affärshögskolan 2017-2019 <br>
+                <li><span id="school_years">2017-2019</span> Affärshögskolan<br>
                 Facility Manager</li>
-                <li>Kärrtorps gymnasium 2007-2010 <br>
+                <li><span id="school_years">2007-2010</span> Kärrtorps gymnasium<br>
                 Sam media med ekonomiinriktning</li>
             </ul>
 
             <div class="horisontell_line"></div>
 
-            <ul id="digital_skills_list"><p>Digitala kunskaper</p>
+            <ul id="digital_skills_list"><p id="item2_heading">Digitala kunskaper</p>
                 <li>PHOTOSHOP</li>
                 <li>MS OFFICE</li>
                 <li>HTML 5</li>
@@ -53,7 +53,7 @@
 
             <div class="horisontell_line"></div>
 
-            <ul id="personal_skills_list"><p>Personliga färdigheter</p>
+            <ul id="personal_skills_list"><p id="item2_heading">Personliga färdigheter</p>
                 <li>Lösningsorienterad</li>
                 <li>Team work</li>
                 <li>Perfektionist</li>
@@ -63,7 +63,7 @@
 
             <div class="horisontell_line"></div>
 
-            <ul id="language_list"><p>Språkkunskaper</p>
+            <ul id="language_list"><p id="item2_heading">Språkkunskaper</p>
                 <li>Svenska</li>
                 <li>Engelska</li>
                 <li>Tyska</li>
@@ -74,15 +74,15 @@
         <div class="item3">
             <img src="profilbild.jpg" id="profile_pic">
 
-                <h2>Curriculum Vitae</h2>
+                <h2 id="heading_cv">Curriculum Vitae</h2>
 
                 <h3>Personlig data</h3>
-                <p id="profile_text">
-                <span class="title_aboutme">Namn: </span>Jennifer Holmqvist<br>
-                <span class="title_aboutme">Födelsedatum: </span>1991-03-22<br>
-                <span class="title_aboutme">Bor: </span>Kungsholmen med hund och sambo. <br>
-                <span class="title_aboutme">Intressen: </span>Musik, inredning & konserter.<br>
-                <span class="title_aboutme">Största tidsfördriv: </span>Dota Underlords</p>
+                <div id="profile_text">
+                <span class="title_aboutme">Namn: </span><span class="ans_aboutme">Jennifer Holmqvist</span><br>
+                <span class="title_aboutme">Födelsedatum: </span><span class="ans_aboutme">1991-03-22</span><br>
+                <span class="title_aboutme">Bor: </span><span class="ans_aboutme">Kungsholmen med hund och sambo.</span><br>
+                <span class="title_aboutme">Intressen: </span><span class="ans_aboutme">Musik, inredning & konserter</span><br>
+                <span class="title_aboutme">Största tidsfördriv: </span><span class="ans_aboutme">Dota Underlords</span></div>
 
                 <h3>Om mig</h3>
                 <p id="profile_text_ommig">
@@ -102,44 +102,82 @@
             
         </div>
 
-        <div class="item4">4
-            <h3>Livserfarenheter</h3>
-            <p><span>2018-2019</span><i class="fas fa-briefcase" style="font-size:70px"></i>Facility Manager på Lefva Bostad/Lefva Fastigheter</p>
+        <div class="item4">
+            <h3>ARBETSLIVSERFARENHETER</h3>
+            <p><span>2018-2019</span><i class="fas fa-briefcase" style="font-size:30px"></i>Facility Manager på Lefva Bostad/Lefva Fastigheter</p>
             <ul>
-                <li><i class="fas fa-check-square"></i>Fastighetsansvarig</li>
-                <li><i class="fas fa-check-square"></i>Fastighetsskötare av hyreshus</li>
-                <li><i class="fas fa-check-square"></i>Budgeteringsansvar för fastigheter</li>
-                <li><i class="fas fa-check-square"></i>Kontraktsansvar för hyresgäster</li>
-                <li><i class="fas fa-check-square"></i>Samordningsansvarig för ledningsgrupp</li>
+                <li><i class="fas fa-grin-stars"></i>Fastighetsansvarig</li>
+                <li><i class="fas fa-grin-stars"></i>Fastighetsskötare av hyreshus</li>
+                <li><i class="fas fa-grin-stars"></i>Budgeteringsansvar för fastigheter</li>
+                <li><i class="fas fa-grin-stars"></i>Kontraktsansvar för hyresgäster</li>
+                <li><i class="fas fa-grin-stars"></i>Samordningsansvarig för ledningsgrupp</li>
             </ul>
-            <p><span>2016-2018</span><i class="fas fa-briefcase" style="font-size:70px"></i>Administrativ receptionist på No18, No18 Office and Lounge</p>
+            <p><span>2016-2018</span><i class="fas fa-briefcase" style="font-size:30px"></i>Administrativ receptionist på No18, No18 Office and Lounge</p>
             <ul>
-                <li><i class="fas fa-check-square"></i>Konferensbokningar</li>
-                <li><i class="fas fa-check-square"></i>Receptionsansvar</li>
-                <li><i class="fas fa-check-square"></i>Personalansvar</li>
-                <li><i class="fas fa-check-square"></i>Platsansvar</li>
+                <li><i class="fas fa-grin-stars"></i>Konferensbokningar</li>
+                <li><i class="fas fa-grin-stars"></i>Receptionsansvar</li>
+                <li><i class="fas fa-grin-stars"></i>Personalansvar</li>
+                <li><i class="fas fa-grin-stars"></i>Platsansvar</li>
             </ul>
-            <p><span>2015-2016</span><i class="fas fa-briefcase" style="font-size:70px"></i>Restaurangchef på McDonald's Vasagatan, Tornado AB, samt restaurangchef på McDonald's Sergelgatan, Tornado AB</p>
+            <p><span>2015-2016</span><i class="fas fa-briefcase" style="font-size:30px"></i>Restaurangchef på McDonald's Vasagatan, Tornado AB, samt restaurangchef på McDonald's Sergelgatan, Tornado AB</p>
             <ul>
-                <li><i class="fas fa-check-square"></i>Budgetering</li>
-                <li><i class="fas fa-check-square"></i>Personalutveckling</li>
-                <li><i class="fas fa-check-square"></i>Driftansvar</li>
-                <li><i class="fas fa-check-square"></i>Restaurangansvarig</li>
-                <li><i class="fas fa-check-square"></i>Platschef</li>
+                <li><i class="fas fa-grin-stars"></i>Budgetering</li>
+                <li><i class="fas fa-grin-stars"></i>Personalutveckling</li>
+                <li><i class="fas fa-grin-stars"></i>Driftansvar</li>
+                <li><i class="fas fa-grin-stars"></i>Restaurangansvarig</li>
+                <li><i class="fas fa-grin-stars"></i>Platschef</li>
             </ul>
-            <p><span>2010-2015</span><i class="fas fa-briefcase" style="font-size:70px"></i>Kassörska, handledare, skiftledare, 1:a assistent på McDonald’s Tornado AB</p>
+            <p><span>2010-2015</span><i class="fas fa-briefcase" style="font-size:30px"></i>Kassörska, handledare, skiftledare, 1:a assistent på McDonald’s Tornado AB</p>
             <ul>
-                <li><i class="fas fa-check-square"></i>Kassaansvarig</li>
-                <li><i class="fas fa-check-square"></i>Områdesansvarig</li>
-                <li><i class="fas fa-check-square"></i>Handledning</li>
-                <li><i class="fas fa-check-square"></i>Personalansvar</li>
-                <li><i class="fas fa-check-square"></i>Schemaläggning</li>
-                <li><i class="fas fa-check-square"></i>Varubeställning & råvaruansvarig</li>
-                <li><i class="fas fa-check-square"></i>Maskinansvarig</li>
+                <li><i class="fas fa-grin-stars"></i>Kassaansvarig</li>
+                <li><i class="fas fa-grin-stars"></i>Områdesansvarig</li>
+                <li><i class="fas fa-grin-stars"></i>Handledning</li>
+                <li><i class="fas fa-grin-stars"></i>Personalansvar</li>
+                <li><i class="fas fa-grin-stars"></i>Schemaläggning</li>
+                <li><i class="fas fa-grin-stars"></i>Varubeställning & råvaruansvarig</li>
+                <li><i class="fas fa-grin-stars"></i>Maskinansvarig</li>
+            </ul>
+            <h3 id="education">UTBILDNINGAR</h3>
+            <span class="education_head">Kvalificerad yrkesutbildning - Medieinstitutet, Webbutveckling inom e-handel</span><br>
+            <p class="education_text">På utbildningen får man kompetens inom ledande e-handelssystem på marknaden. 
+                Man får lära sig att utveckla och programmera med märk- och skriftspråk som t.ex. HTML5, CSS3, Javascript/jQuery, PHP och XML. 
+                Man får även lära sig interaktion mellan olika databassystem och får kunskap om hur
+                man interagerar mellan olika order- och affärssystem, betalningslösningar och externa system.
+            </p>
+            <h4>KURSER PÅ UTBILDNINGEN:</h4>
+            <ul>
+                <li>E-handel & M-handel</li>
+                <li>Frontendutveckling 1</li>
+                <li>Systemutveckling ramverk</li>
+                <li>Arbets-och projektmetodik</li>
+                <li>Systemutveckling PHP</li>
+                <li>Utveckling mot e-handelsplattformar</li>
+                <li>Digitala affärer</li>
+                <li>Databasteknik</li>
+                <li>Systemstöd och integration med 3-partssystem</li>
+                <li>LIA 1 & LIA 2</li>
+            </ul>
+            <span class="education_head">Kvalificerad yrkesutbildning - Affärshögskolan, Facility Manager</span><br>
+            <p class="education_text">Kort så innebär rollen som Facility Manager att agera samordnare för företag, 
+                oftast som inhyrd konsult, men man kan också anställas inhouse om behovet finns. 
+                Man har då hand om stödtjänsterna så att företaget kan koncentrera sig på kärnverksamheten.
+            </p>
+            <h4>KURSER PÅ UTBILDNINGEN:</h4>
+            <ul>
+                <li>Grundbegrepp inom Facility Manager</li>
+                <li>Ekonomistyrning & kalkylering</li>
+                <li>Entreprenad och hyresjuridik</li>
+                <li>Kvalitet</li>
+                <li>Operativ facility manager</li>
+                <li>Kommunikation</li>
+                <li>Strategisk och taktisk planering</li>
+                <li>Säkerhet, krisberedskap och sårbarhetsanalys</li>
+                <li>Projektledning</li>
+                <li>Upphandling</li>
+                <li>LIA 1 & LIA 2</li>
             </ul>
         </div>
 
-        <div class="item5">5</div>
     </div>
 
 </body>

@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*--------GRID--------*/
+
+/*names for grid-elements*/
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: right; }
+.item4 { grid-area: main; }
+
+/*lay-out proprties for grid*/
+.grid-container {
+  grid-template-areas:
+    'header header header header header'
+    'menu right right right right'
+    'menu main main main main';
+}
+
+/*properties for the whole grid-container*/
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 10px;
+    background-color: black;
+    padding: 40px 40px 10px 40px;
+    font-family: $text_font;
+    overflow: hidden;
+}
+
+ /*proprties for div in container*/
+.grid-container > div {
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+span {
+    color: silver;
+}
+
+
+/*properties for items*/
+
+/*--------item1 - header--------*/
+div>.item1 {
+    background-color: black;
+    text-align: right;
+    height: 5rem;
+}
+
+#header_links>li {
+    display: inline-block;
+    padding: 20px 30px;
+    list-style: none;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+#header_sides {
+    border-right: 2px solid silver;
+    border-left: 2px solid silver;
+}
+
+.head_link {
+    color: silver;
+    text-decoration: none;
+}
+
+
+/*--------item2 - menu--------*/
+
+/*lines*/ 
+
+.horisontell_line {
+    border-bottom: 2px solid whitesmoke;
+    width: 60%;
+    margin-left: 17%;
+}
+
+/*menues with text to the left*/
+#menu_contact_links,
+#education_list,
+#digital_skills_list,
+#personal_skills_list,
+#language_list {
+    list-style: none;
+    color: whitesmoke;
+    font-size: 13px;
+    padding: 7rem 1rem;
+}
+
+.item2>ul {
+    padding: 7rem 0rem;
+}
+
+div>.item2 {
+    background-color: black;
+    color: whitesmoke;
+    height: 105rem;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    border: 2px solid whitesmoke;
+}
+
+#item2_heading {
+    color: whitesmoke;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.school_years {
+    font-weight: bold;
+} 
+
+
+/*--------item3 - right---------*/ 
+div>.item3 {
+    height: 40rem;
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+/*profile picture*/
+#profile_pic {
+    width: 275px;
+    height: 600px;
+    float: left;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*headlines for text under picture*/
+h3,
+#heading_cv {
+    padding-bottom: 10px;
+    padding-top: 15px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+/*short facts*/
+#profile_text {
+    color: silver;
+    padding-bottom: 30px;
+}
+
+/*2 texts about me*/
+#profile_text_ambitioner,
+#profile_text_ommig {
+    color: silver;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 350px;
+    font-size: 15px;
+    text-shadow: 0 0 0.5px black;
+}
+
+.title_aboutme {
+    color: black;
+    font-weight: bold;
+}
+
+
+/*--------item4 - main --------*/
+div>.item4 {
+    height: 95rem;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    padding: 10px;
+}
+
+
+/*headlines for work and education*/
+.item4>h4 {
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.item4>ul {
+    text-align: left;
+    padding: 15px 50px;
+    list-style: none;
+    font-size: 13px;
+    background-color: white;
+}
+
+.education_head {
+    color: black;
+    padding-top: 50px;
+}
+
+.education_text {
+    color: silver;
+    font-size: 14px;
+    text-shadow: 0 0 0.5px black;
+}
+
+i {
+    padding: 5px;
+}

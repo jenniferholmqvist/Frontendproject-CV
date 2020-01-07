@@ -1,0 +1,115 @@
+@media screen
+  and (max-width: 900px)
+  and (min-width: 740px)
+  {
+    div>.item2 {
+        height: 114rem;
+    }
+
+    #profile_text {
+        font-size: 13px;
+    }
+
+    div>.item3 {
+        height: 60rem;
+    }
+
+    div>.item4 {
+        height: 105rem;
+    }
+  }
+
+@media screen 
+  and (max-width: 740px)
+  and (min-width: 600px)
+  {
+    div>.item1 {
+        text-align: left;
+    }
+
+    #header_links>li {
+        font-size: 15px;
+    }
+
+    div>.item2 {
+        height: 118rem;
+        grid-column-start: 0.5;
+        grid-column-end: 0.5;
+    }
+
+    #profile_text {
+        font-size: 10px;
+        padding-left: 5px;
+        padding-top: 1rem;
+    }
+
+    #profile_text_ommig,
+    #profile_text_ambitioner {
+        padding-right: 30px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        font-size: 13px;
+    }
+
+    #profile_pic {
+        width: 165px;
+        height: 328px;
+        padding: 10px;
+        margin-left: 60px;
+    }
+
+    div>.item3 {
+        height: 70rem;
+    }
+
+    div>.item4 {
+        height: 133rem;
+    }
+
+  }
+
+  @media screen 
+  and (max-width: 600px)
+  and (min-width: 200px)
+  {
+    div>.item1 {
+        text-align: left;
+    }
+
+    #header_links>li {
+        font-size: 13px;
+    }
+
+    div>.item2 {
+        height: 117rem;
+    }
+
+    #profile_text {
+        font-size: 10px;
+        padding-left: 5px;
+        padding-top: 1rem;
+    }
+
+    #profile_text_ommig,
+    #profile_text_ambitioner {
+        padding-right: 30px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        font-size: 11px;
+    }
+
+    #profile_pic {
+        width: 83px;
+        height: 175px;
+        padding: 20px;
+        margin-left: 50px;
+    }
+
+    div>.item3 {
+        height: 60rem;
+    }
+
+    div>.item4 {
+        height: 162rem;
+    }
+}
